@@ -1,2 +1,3 @@
-# WdPAI_Project
-Project for passing a subject from studies
+# Car Rental - WdPAI project
+
+### Projekt polega na stworzeniu strony wypożyczalni samochodów w formie zaliczenia projektu na studia.

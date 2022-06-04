@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #211A1A;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 .comp_name {
     font-style: italic;
@@ -127,7 +127,7 @@ button {
     justify-content: center;
     align-items: center;
     background: #211A1A;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 .nav {
@@ -183,13 +183,15 @@ button {
     left: 0;
     color: #FFFFFF;
     font-size: 40px;
-    max-width: 960px;
+    max-width: 50%;
 }
 .top-text {
     text-align: center;
 }
 .bottom-text {
     text-align: justify;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
 }
 
 .right {

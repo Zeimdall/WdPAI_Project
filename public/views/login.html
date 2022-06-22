@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+
     <title>LOGIN PAGE</title>
     <meta charset="utf-8">
 </head>
@@ -11,12 +12,14 @@
         </div>
     </header>
     <div class="container">
-        <div class="login-container">
-            <form>
-                <label for="email"></label><input id="email" name="email" type="text" placeholder="email">
-                <label for="password"></label><input id="password" name="password" type="password" placeholder="hasło">
-                <button id="loginbtn">Zaloguj się</button>
-            </form>
-        </div>
+            <div class="container-header">
+                <div class="header-item active" style="margin-right: 5px">Logowanie</div>
+                <a class="header-item" href="registration.html">Rejestracja</a>
+            </div>
+            <div class="container-content">
+                <input id="email" class="center" name="email" type="text" placeholder="email">
+                <input id="password" class="center" name="password" type="password" placeholder="hasło">
+                <button id="loginbtn" class="center">Zaloguj się</button>
+            </div>
     </div>
 </body>

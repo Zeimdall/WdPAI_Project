@@ -1,0 +1,105 @@
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background: #211A1A;
+    border-bottom: 2px solid white;
+}
+.comp_name {
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto 0 auto;
+    min-height: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 6px 6px #00000029;
+    border: 2px solid white;
+    border-radius: 33px;
+    background: rgba(112, 112, 112, 0.8);
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.container .container-header {
+    display: flex;
+    margin-top: 30px;
+    align-self: center;
+}
+
+.container .container-header .header-item {
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #808080 100%) 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 20px;
+
+    width: 120px;
+    border: none;
+    color: black;
+    line-height: 2.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container .container-header .header-item.active {
+    background: transparent linear-gradient(180deg, #ff0000 0%, #dedede 100%) 0 0 no-repeat padding-box;
+}
+
+.container .container-content .text-field {
+    margin: 0 auto;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid white;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+}
+
+input.center, button.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:focus {
+    outline: none!important;
+}
+
+button {
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #808080 100%) 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 20px;
+
+    width: 30%;
+    border: none;
+    color: black;
+    margin: 2em;
+    line-height: 2.5em;
+}
+
+#email, #password #confirm-password {
+    color: white;
+}

@@ -1,0 +1,42 @@
+.tile-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: baseline;
+}
+
+.tile-container .tile {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    margin: 50px 0 0 50px;
+}
+
+.tile-container .tile .tile-img {
+    width: 100%;
+    height: 65%;
+    background-color: red;
+}
+
+.tile-container .tile .tile-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.tile-container .tile .tile-content .tile-description {
+    padding-left: 10px;
+}
+
+.tile-container .tile .tile-content .tile-description .description-name {
+    font-weight: bold;
+}
+
+.tile-container .tile .tile-content .tile-description .additional-description {
+    font-size: 12px;
+}
+
+.rentbtn {
+    margin-left: auto;
+}

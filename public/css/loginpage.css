@@ -57,7 +57,8 @@
 }
 
 .container .container-header .header-item.active {
-    background: transparent linear-gradient(180deg, #ff0000 0%, #dedede 100%) 0 0 no-repeat padding-box;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,55,79,1) 35%, #3F99BC 100%);
+    color: white;
 }
 
 .container .container-content .text-field {

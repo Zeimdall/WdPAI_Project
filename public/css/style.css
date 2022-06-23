@@ -2,6 +2,7 @@
 @import "mainpage.css";
 @import "choosecarpage.css";
 @import "contactpage.css";
+@import "servicepage.css";
 
 *{
     font-family: Lato, serif;

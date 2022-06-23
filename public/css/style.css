@@ -1,6 +1,7 @@
 @import "loginpage.css";
 @import "mainpage.css";
 @import "choosecarpage.css";
+@import "contactpage.css";
 
 *{
     font-family: Lato, serif;

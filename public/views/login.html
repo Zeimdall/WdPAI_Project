@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>LOGIN PAGE</title>
     <meta charset="utf-8">
@@ -8,17 +9,22 @@
     <header>
         <div class="header">
             <div class="comp_name">CAR RENTAL</div>
+            <div class="lang-wrap">
+                <img id="pl-lang" class="lang-item current-lang" src="../img/poland.png" alt="polski">
+                <img id="en-lang" class="lang-item" src="../img/united-kingdom.png" alt="english">
+            </div>
         </div>
     </header>
     <div class="container">
-            <div class="container-header">
-                <div class="header-item active" style="margin-right: 5px">Logowanie</div>
-                <a class="header-item" href="registration.html">Rejestracja</a>
-            </div>
-            <div class="container-content">
-                <input id="email" class="center" name="email" type="text" placeholder="email">
-                <input id="password" class="center" name="password" type="password" placeholder="hasło">
-                <button id="loginbtn" class="center">Zaloguj się</button>
-            </div>
+        <div class="container-header">
+            <div class="header-item active" style="margin-right: 5px">Logowanie</div>
+            <a class="header-item" href="registration.html">Rejestracja</a>
+        </div>
+        <div class="container-content">
+            <input id="email" class="email center" name="email" type="text" placeholder="email">
+            <input id="password" class="password center" name="password" type="password" placeholder="hasło">
+            <button id="loginbtn" class="login-btn center">Zaloguj się</button>
+        </div>
     </div>
 </body>
+</html>

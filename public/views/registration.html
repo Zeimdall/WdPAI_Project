@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>REGISTRATION</title>
@@ -9,6 +9,10 @@
     <header>
         <div class="header">
             <div class="comp_name">CAR RENTAL</div>
+            <div class="lang-wrap">
+                <img class="pl-lang current-lang" src="../img/poland.png">
+                <img class="en-lang" src="../img/united-kingdom.png">
+            </div>
         </div>
     </header>
     <div class="container">
@@ -17,11 +21,17 @@
             <div class="header-item active">Rejestracja</div>
         </div>
         <div class="container-content">
-            <input id="email" class="center" name="email" type="text" placeholder="email">
-            <input id="password" class="center" name="password" type="password" placeholder="hasło">
-            <input id="confirm-password" class="center" name="confirm-password" type="password" placeholder="powtórz hasło">
-            <button id="registbtn" class="center">Zarejestruj się</button>
+            <input id="email" class="email center" name="email" type="text" placeholder="email">
+            <input id="password" class="password center" name="password" type="password" placeholder="hasło">
+            <input id="confirm-password" class="confirm-password center" name="confirm-password" type="password" placeholder="powtórz hasło">
+            <button id="registbtn" class="registration-btn center">Zarejestruj się</button>
         </div>
     </div>
+    <script>
+        const langPl = document.querySelector('.lang-wrap');
+        const link = document.querySelectorAll('a');
+        const langEn = document.querySelector('');
+
+    </script>
 </body>
 </html>

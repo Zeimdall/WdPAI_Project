@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>LOGIN PAGE</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>REGISTRATION</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
@@ -17,14 +17,21 @@
     </header>
     <div class="container">
         <div class="container-header">
-            <div class="header-item active" style="margin-right: 5px">Logowanie</div>
-            <a class="header-item" href="registration.html">Rejestracja</a>
+            <a class="header-item" href="login.html" style="margin-right: 5px">Logowanie</a>
+            <div class="header-item active">Rejestracja</div>
         </div>
         <div class="container-content">
             <input id="email" class="email center" name="email" type="text" placeholder="email">
             <input id="password" class="password center" name="password" type="password" placeholder="hasło">
-            <button id="loginbtn" class="login-btn center">Zaloguj się</button>
+            <input id="confirm-password" class="confirm-password center" name="confirm-password" type="password" placeholder="powtórz hasło">
+            <button id="registbtn" class="registration-btn center">Zarejestruj się</button>
         </div>
     </div>
+    <script>
+        const langPl = document.querySelector('.lang-wrap');
+        const link = document.querySelectorAll('a');
+        const langEn = document.querySelector('');
+
+    </script>
 </body>
 </html>

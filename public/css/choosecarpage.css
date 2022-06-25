@@ -1,0 +1,52 @@
+.tile-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: baseline;
+}
+
+.tile-container .tile {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    margin: 50px 0 0 50px;
+    border-radius: 33px;
+}
+
+.tile-container .tile .tile-img {
+    width: 100%;
+    height: 65%;
+    background-color: red;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+}
+
+.tile-container .tile .tile-img .img-content {
+    width:100%;
+    height:100%;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+}
+
+.tile-container .tile .tile-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.tile-container .tile .tile-content .tile-description {
+    padding-left: 15px;
+}
+
+.tile-container .tile .tile-content .tile-description .description-name {
+    font-weight: bold;
+}
+
+.tile-container .tile .tile-content .tile-description .additional-description {
+    font-size: 12px;
+}
+
+.rent-btn {
+    margin-left: auto;
+}

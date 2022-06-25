@@ -1,3 +1,3 @@
 # Car Rental - WdPAI project
 
-### Projekt polega na stworzeniu strony wypożyczalni samochodów w formie zaliczenia projektu na studia.
+### Jest to strona internetowa, na której można zarezerwować pojazd na wynajem.

@@ -1,0 +1,13 @@
+.main-container.divide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container.divide .img-map {
+    max-width: 650px;
+}
+
+.main-container.divide .text-description {
+    word-wrap: break-word;
+}

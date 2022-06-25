@@ -3,32 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>CONTACT PAGE</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
 </head>
 <body>
     <div id="app-header">
         <nav class="nav-container">
             <a id="compname" class="nav_comp_name">CAR RENTAL</a>
-<!--            <div class="lang-wrap">-->
-<!--                <img class="pl-lang current-lang" src="../img/poland.png">-->
-<!--                <img class="en-lang" src="../img/united-kingdom.png">-->
-<!--            </div>-->
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list" id="nav-list">
                     <li class="nav__item">
-                        <a href="mainpage.html" class="nav__link">Strona główna</a>
+                        <a href="mainpage.php" class="nav__link">Strona główna</a>
                     </li>
                     <li class="nav__item">
-                        <a href="servicespage.html" class="nav__link">Usługi</a>
+                        <a href="servicespage.php" class="nav__link">Usługi</a>
                     </li>
                     <li class="nav__item">
-                        <a href="choosecarpage.html" class="nav__link">Pojazdy</a>
+                        <a href="choosecarpage.php" class="nav__link">Pojazdy</a>
                     </li>
                     <li class="nav__item">
-                        <a href="contactpage.html" class="nav__link">Kontakt</a>
+                        <a href="contactpage.php" class="nav__link">Kontakt</a>
                     </li>
                     <li class="nav__item">
-                        <a href="login.html" class="nav__link">Wyloguj się</a>
+                        <a href="login.php" class="nav__link">Wyloguj się</a>
                     </li>
                 </ul>
             </div>
@@ -40,7 +36,7 @@
             <h3>PIOTR ZYCH</h3>
             <h4>STUDENT PK</h4>
             <h5>
-                <a href="mailto:piotr.zych@student.pk.edu.pl">Wyślij wiadomość email</a>
+                <a href="mailto:piotr.zych@student.pk.edu.pl" class="sendMail">Wyślij wiadomość email</a>
             </h5>
         </div>
     </div>

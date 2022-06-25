@@ -33,6 +33,13 @@
     margin-left: 10px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     width: 400px;
     margin: 100px auto 0 auto;
@@ -78,7 +85,7 @@
     margin-right: 5px
 }
 
-.container .container-content .text-field {
+.container .container-content .login .text-field {
     margin: 0 auto;
 }
 

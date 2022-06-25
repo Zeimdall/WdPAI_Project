@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__.'/controllers/DefaultController.php';
+require_once __DIR__.'/src/controllers/DefaultController.php';
+require_once __DIR__.'/src/controllers/SecurityController.php';
 
 class Router {
 
@@ -8,6 +9,11 @@ class Router {
     public static function get($url, $view) {
         self::$routes[$url] = $view;
     }
+
+    public static function post($url, $view){
+        self::$routes[$url] = $view;
+    }
+
 
     public static function run (string $url) {
         $action = explode("/", $url)[0];

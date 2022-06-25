@@ -38,6 +38,7 @@
 
 .nav__item {
     margin: 10px;
+    cursor: pointer;
 }
 
 .nav__link {

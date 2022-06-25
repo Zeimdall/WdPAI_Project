@@ -5,10 +5,9 @@ class User {
     private $password;
     private $userId;
 
-    public function __construct(string $email, string $password, $userId) {
+    public function __construct(string $email, string $password) {
         $this->email = $email;
         $this->password = $password;
-        $this->userId = $userId;
     }
 
     public function getId()

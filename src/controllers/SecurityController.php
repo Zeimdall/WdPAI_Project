@@ -29,7 +29,7 @@ class SecurityController extends AppController {
             $user = $this->userRepository->getUser($email);
 
             if (!$user) {
-                return $this->render('login', ['messages' => ['User with this login does not exist!']]);
+                return $this->render('login', ['messages' => ['User does not exist!']]);
             }
 
             if ($user->getPassword() !== $password) {
@@ -66,7 +66,7 @@ class SecurityController extends AppController {
             $url = "http://$_SERVER[HTTP_HOST]";
             header("Location: {$url}/login");
         }else{
-            return $this->render('logout');
+            return $this->render('login');
         }
 
     }
@@ -108,7 +108,7 @@ class SecurityController extends AppController {
         $this->userRepository->addUser($user);
 
         $url = "http://$_SERVER[HTTP_HOST]";
-        header("Location: {$url}/registration");
+        header("Location: {$url}/register");
 
         return $this->render('login', ['messages' => ['You\'ve been succesfully registrated!']]);
     }

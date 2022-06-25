@@ -77,6 +77,7 @@ form {
     line-height: 2.5em;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .container .container-header .header-item.active {
@@ -104,6 +105,10 @@ input {
     width: 50%;
 }
 
+input.center {
+    color: white;
+}
+
 input.center, button.center {
     margin-left: auto;
     margin-right: auto;
@@ -123,8 +128,15 @@ button {
     color: black;
     margin: 2em;
     line-height: 2.5em;
+    cursor: pointer;
 }
 
 #email, #password #confirm-password {
     color: white;
+}
+
+.messages {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
 }

@@ -10,9 +10,11 @@
         <img src="public/img/Zych%20Piotr%204%20pp.jpg" class="contact-img">
         <div class="contact-description">
             <h3>PIOTR ZYCH</h3>
-            <h4>STUDENT PK</h4>
+            <h4>Student of the Cracow University of Technology</h4>
+            <h5>Creator of car rental application</h5>
             <h5>
-                <a href="mailto:piotr.zych@student.pk.edu.pl" class="sendMail">Wyślij wiadomość email</a>
+                <a>If u have questions:</a>
+                <a href="mailto:piotr.zych@student.pk.edu.pl" class="sendMail">Send an email message</a>
             </h5>
         </div>
     </div>

@@ -10,6 +10,7 @@ Router::get('loginpage', 'DefaultController');
 Router::get('mainpage', 'DefaultController');
 Router::get('services', 'DefaultController');
 Router::get('choosecar', 'DefaultController');
+Router::get('cars', 'CarController');
 Router::get('contact', 'DefaultController');
 
 Router::get('login', 'SecurityController');

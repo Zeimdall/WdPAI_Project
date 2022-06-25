@@ -8,13 +8,13 @@
     <?php include 'header_login.php' ?>
     <div class="container">
         <div class="container-header">
-            <div class="header-item active" style="margin-right: 5px">Logowanie</div>
-            <a class="header-item non-active" onclick="redirect('register')">Rejestracja</a>
+            <div class="header-item active" style="margin-right: 5px">Sign in</div>
+            <a class="header-item non-active" onclick="redirect('register')">Sign up</a>
         </div>
         <div class="container-content" lang="en">
             <form class="login" action="login" method="POST">
                 <input id="email" class="email center" name="email" type="text" placeholder="email">
-                <input id="password" class="password center" name="password" type="password" placeholder="hasło">
+                <input id="password" class="password center" name="password" type="password" placeholder="password">
                 <div class="messages">
                     <?php
                     if(isset($messages)){
@@ -24,7 +24,7 @@
                     }
                     ?>
                 </div>
-                <button id="loginbtn" class="login-btn center">Zaloguj się</button>
+                <button id="loginbtn" class="login-btn center">Sign in</button>
             </form>
         </div>
     </div>

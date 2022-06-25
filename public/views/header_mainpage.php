@@ -12,19 +12,19 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list" id="nav-list">
                     <li class="nav__item">
-                        <a onclick="redirect('mainpage')" class="nav__link">Strona główna</a>
+                        <a onclick="redirect('mainpage')" class="nav__link">Main Page</a>
                     </li>
                     <li class="nav__item">
-                        <a onclick="redirect('services')" class="nav__link">Usługi</a>
+                        <a onclick="redirect('services')" class="nav__link">Services</a>
                     </li>
                     <li class="nav__item">
-                        <a onclick="redirect('choosecar')" class="nav__link">Pojazdy</a>
+                        <a onclick="redirect('choosecar')" class="nav__link">Cars</a>
                     </li>
                     <li class="nav__item">
-                        <a onclick="redirect('contact')" class="nav__link">Kontakt</a>
+                        <a onclick="redirect('contact')" class="nav__link">Contact</a>
                     </li>
                     <li class="nav__item">
-                        <a onclick="redirect('logout')" class="nav__link">Wyloguj się</a>
+                        <a onclick="redirect('logout')" class="nav__link">Sign out</a>
                     </li>
                 </ul>
             </div>

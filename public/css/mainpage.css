@@ -42,8 +42,11 @@
 }
 
 .nav__link {
-    text-decoration: none;
     color: white;
+}
+
+.nav__link {
+    text-decoration: underline;
 }
 
 .main-container {

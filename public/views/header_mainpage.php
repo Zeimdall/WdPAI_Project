@@ -24,7 +24,7 @@
                         <a onclick="redirect('contact')" class="nav__link">Kontakt</a>
                     </li>
                     <li class="nav__item">
-                        <a onclick="redirect('login')" class="nav__link">Wyloguj się</a>
+                        <a onclick="redirect('logout')" class="nav__link">Wyloguj się</a>
                     </li>
                 </ul>
             </div>

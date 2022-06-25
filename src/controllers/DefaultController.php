@@ -6,7 +6,12 @@ class DefaultController extends AppController {
 
     public function index()
     {
-        $this->render('login');
+        $this->render('loginpage');
+    }
+
+    public function loginpage()
+    {
+        $this->render('loginpage');
     }
 
     public function mainpage()
@@ -25,5 +30,10 @@ class DefaultController extends AppController {
     public function contact()
     {
         $this->render('contactpage');
+    }
+
+    public function logout()
+    {
+        $this->render('loginpage');
     }
 }

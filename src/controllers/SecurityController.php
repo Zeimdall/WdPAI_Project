@@ -23,17 +23,17 @@ class SecurityController extends AppController {
             $password = md5($_POST['password']);
 
             if(!$email || !$password){
-                return $this->render('login', ['messages' => ['Please fill all of the inputs']]);
+                return $this->render('loginpage', ['messages' => ['Please fill all of the inputs']]);
             }
 
             $user = $this->userRepository->getUser($email);
 
             if (!$user) {
-                return $this->render('login', ['messages' => ['User does not exist!']]);
+                return $this->render('loginpage', ['messages' => ['User does not exist!']]);
             }
 
             if ($user->getPassword() !== $password) {
-                return $this->render('login', ['messages' => ['Wrong password!']]);
+                return $this->render('loginpage', ['messages' => ['Wrong password!']]);
             }
             $_SESSION['email'] = $user->getEmail();
             $_SESSION['userId'] = $user->getId();
@@ -45,12 +45,12 @@ class SecurityController extends AppController {
             $url = "http://$_SERVER[HTTP_HOST]";
             header("Location: {$url}/mainpage");
         } else {
-            return $this->render('login');
+            return $this->render('loginpage');
         }
-
     }
 
-    public function logout(){
+    public function logout()
+    {
         session_start();
 
         if($this->isPost()){
@@ -61,12 +61,12 @@ class SecurityController extends AppController {
             session_destroy();
 
             $url = "http://$_SERVER[HTTP_HOST]";
-            header("Location: {$url}/login");
+            header("Location: {$url}/loginpage");
         }elseif(!$_SESSION['logged_in']){
             $url = "http://$_SERVER[HTTP_HOST]";
-            header("Location: {$url}/login");
+            header("Location: {$url}/loginpage");
         }else{
-            return $this->render('login');
+            return $this->render('loginpage', ['messages' => ['You have been successfully logged out!']]);
         }
 
     }
@@ -79,9 +79,9 @@ class SecurityController extends AppController {
 
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $confirmedPassword = $_POST['confirmedPassword'];
+        $confirmedPassword = $_POST['confirm-password'];
 
-        if (!$email || !$password || !$confirmedPassword){
+        if ($email == null || $password == null || $confirmedPassword == null){
             return $this->render('register', ['messages' => ['Please fill all of the inputs']]);
         }
 
@@ -102,14 +102,10 @@ class SecurityController extends AppController {
             return $this->render('register', ['messages' => ['Please provide proper password']]);
         }
 
-
         $user = new User($email, md5($password));
 
         $this->userRepository->addUser($user);
 
-        $url = "http://$_SERVER[HTTP_HOST]";
-        header("Location: {$url}/register");
-
-        return $this->render('login', ['messages' => ['You\'ve been succesfully registrated!']]);
+        return $this->render('loginpage', ['messages' => ['You\'ve been succesfully registrated!']]);
     }
 }

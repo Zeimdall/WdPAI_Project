@@ -77,6 +77,9 @@ form {
     line-height: 2.5em;
     text-align: center;
     text-decoration: none;
+}
+
+.header-item.non-active {
     cursor: pointer;
 }
 
@@ -129,6 +132,15 @@ button {
     margin: 2em;
     line-height: 2.5em;
     cursor: pointer;
+    display: block;
+}
+
+#loginbtn:hover {
+    color: #FFFFFF;
+}
+
+.container .container-header .header-item:hover {
+    color: #FFFFFF;
 }
 
 #email, #password #confirm-password {

@@ -13,14 +13,13 @@ class UserRepository extends Repository
 
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if($user == false){
+        if(!$user){
             return null;
         }
 
         return new User(
             $user['email'],
-            $user['password'],
-            $user['userId']
+            $user['password']
         );
 
     }
@@ -28,8 +27,8 @@ class UserRepository extends Repository
     public function addUser(User $user) {
 
         $stmt = $this->database->connect()->prepare('
-            INSERT INTO users (user_id, email, password)
-            VALUES (?, ?, ?)
+            INSERT INTO users (email, password)
+            VALUES (?, ?)
         ');
 
         $stmt->execute([

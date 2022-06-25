@@ -9,7 +9,7 @@
     <?php include 'header_login.php' ?>
     <div class="container">
         <div class="container-header" >
-            <a class="header-item" onclick="redirect('login')" style="margin-right: 5px">Logowanie</a>
+            <a class="header-item non-active" onclick="redirect('loginpage')" style="margin-right: 5px">Logowanie</a>
             <div class="header-item active" >Rejestracja</div>
         </div>
         <div class="container-content">

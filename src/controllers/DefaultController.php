@@ -14,6 +14,11 @@ class DefaultController extends AppController {
         $this->render('loginpage');
     }
 
+    public function adminpage()
+    {
+        $this->render('adminpage');
+    }
+
     public function mainpage()
     {
         $this->render('mainpage');

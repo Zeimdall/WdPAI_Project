@@ -43,7 +43,6 @@ form {
 
 .container {
     width: 400px;
-    margin: 100px auto 0 auto;
     height: 420px;
     display: flex;
     flex-direction: column;
@@ -52,6 +51,18 @@ form {
     border: 2px solid white;
     border-radius: 33px;
     background: rgba(112, 112, 112, 0.8);
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        margin: 100px auto 0 auto;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .container {
+        margin: 200px auto 0 auto;
+    }
 }
 
 .container-content {
@@ -140,7 +151,11 @@ button {
     color: #FFFFFF;
 }
 
-#registbtn:hover {
+input#car-img {
+    border-bottom: none;
+}
+
+#registbtn:hover, #add-car-btn:hover {
     color: white;
 }
 
@@ -157,4 +172,5 @@ button {
     font-weight: bold;
     font-style: italic;
     margin: 10px 0 10px 0;
+    height: 0;
 }

@@ -23,7 +23,7 @@ class CarController extends AppController
     {
         session_start();
         $cars = $this->carRepository->getCars();
-        $this->render('choosecarpage', ['choosecarpage' => $cars]);
+        $this->render('choosecar', ['choosecar' => $cars]);
     }
 
     public function addCar()

@@ -7,6 +7,7 @@ $path = parse_url( $path, PHP_URL_PATH);
 
 Router::get('', 'DefaultController');
 Router::get('loginpage', 'DefaultController');
+Router::get('adminpage', 'DefaultController');
 Router::get('mainpage', 'DefaultController');
 Router::get('services', 'DefaultController');
 Router::get('choosecar', 'DefaultController');

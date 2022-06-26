@@ -11,7 +11,7 @@
             <div class="header-item active" style="margin-right: 5px">Sign in</div>
             <a class="header-item non-active" onclick="redirect('register')">Sign up</a>
         </div>
-        <div class="container-content" lang="en">
+        <div class="container-content">
             <form class="login" action="login" method="POST">
                 <input id="email" class="email center" name="email" type="text" placeholder="email">
                 <input id="password" class="password center" name="password" type="password" placeholder="password">

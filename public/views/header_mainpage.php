@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>MAIN PAGE</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="public/css/style.css">
-</head>
 <body>
     <div id="app-header">
         <nav class="nav-container">

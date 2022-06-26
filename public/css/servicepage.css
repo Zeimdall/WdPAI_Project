@@ -4,10 +4,23 @@
     align-items: center;
 }
 
-.main-container.divide .img-map {
-    max-width: 650px;
+#map {
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
 }
-
-.main-container.divide .text-description {
-    word-wrap: break-word;
+.marker {
+    background-image: url('/public/img/mapbox-icon.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.mapboxgl-popup {
+    max-width: 200px;
+}
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }

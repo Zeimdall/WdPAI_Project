@@ -9,7 +9,7 @@
     <div class="tile-container">
         <div class="tile">
             <div class="tile-img">
-                <?php
+                <?php include 'src/controllers/CarController.php';
                 foreach($cars as $car):?>
                 <img src="public/uploads/<?=$car->getImage();?>" class="img-content" alt="normal img">
             </div>

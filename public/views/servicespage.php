@@ -12,10 +12,9 @@
 <body>
     <?php include 'header_mainpage.php'?>
     <div class="main-container divide">
-        <h1>Lokalizacje</h1>
+        <h1>Localization</h1>
         <div id="map"></div>
-        <h3>Parking</h3>
-        <div class="text-description">Aktualnie jest możliwość odbioru, a także zostawienia pojazdów w Krakowie na ulicy Warszawskiej 24. Staramy się zwiększyć zasięg naszej wypożyczalni o inne lokalizacje.</div>
+        <div class="text-description"><br>Currently it is possible to pick and leave vehicles in Polish city Kraków on Warszawska 24 street. We are still working to extend the range of our car rental to other locations. We will let you know in the near future!</div>
     </div>
 </body>
 </html>

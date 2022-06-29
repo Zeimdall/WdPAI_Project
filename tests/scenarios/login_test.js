@@ -11,20 +11,20 @@ Before(({I}) => {
    I.amOnPage('');
 });
 
-// Scenario('Try to login with empty credentials', ({ I, LoginRegisterPage }) => {
-//     LoginRegisterPage.tryToLoginWithEmptyCredentials();
-//     I.see("Please fill all of the inputs");
-// });
-//
-// Scenario('Try to login with user that doesnt exist', ({I, LoginRegisterPage}) => {
-//    LoginRegisterPage.tryToLoginWithIncorrectEmailForm(incorrectEmail, pass);
-//    I.see("User does not exist!");
-// });
-//
-// Scenario('Try to login with incorrect password', ({I, LoginRegisterPage}) => {
-//     LoginRegisterPage.tryToLoginWithIncorrectPassword(existedUser, pass);
-//     I.see("Wrong password!")
-// });
+Scenario('Try to login with empty credentials', ({ I, LoginRegisterPage }) => {
+    LoginRegisterPage.tryToLoginWithEmptyCredentials();
+    I.see("Please fill all of the inputs");
+});
+
+Scenario('Try to login with user that doesnt exist', ({I, LoginRegisterPage}) => {
+   LoginRegisterPage.tryToLoginWithIncorrectEmailForm(incorrectEmail, pass);
+   I.see("User does not exist!");
+});
+
+Scenario('Try to login with incorrect password', ({I, LoginRegisterPage}) => {
+    LoginRegisterPage.tryToLoginWithIncorrectPassword(existedUser, pass);
+    I.see("Wrong password!")
+});
 
 Scenario('Try to register with empty credentials', ({I, LoginRegisterPage}) => {
    LoginRegisterPage.tryToRegisterUserWithEmptyCredentials();

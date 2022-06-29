@@ -14,6 +14,12 @@
     border-radius: 33px;
 }
 
+@media only screen and (min-width: 590px) {
+    .tile-container .tile {
+        margin: 0 auto;
+    }
+}
+
 .tile-container .tile .tile-img {
     width: 100%;
     height: 65%;

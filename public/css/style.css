@@ -3,6 +3,7 @@
 @import "choosecarpage.css";
 @import "contactpage.css";
 @import "servicepage.css";
+@import "header.css";
 
 *{
     font-family: Lato, serif;

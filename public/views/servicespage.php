@@ -11,10 +11,12 @@
 </head>
 <body>
     <?php include 'header_mainpage.php'?>
-    <div class="main-container divide">
-        <h1>Localization</h1>
-        <div id="map"></div>
-        <div class="text-description"><br>Currently it is possible to pick and leave vehicles in Polish city Kraków on Warszawska 24 street. We are still working to extend the range of our car rental to other locations. We will let you know in the near future!</div>
+    <div class="main-container split">
+        <div class="left">
+            <h1 id="loc-title">Localization</h1>
+            <div id="map"></div>
+        </div>
+        <div class="text-description right"><br>Currently it is possible to pick and leave vehicles in Polish city Kraków on Warszawska 24 street. We are still working to extend the range of our car rental to other locations. We will let you know in the near future!</div>
     </div>
 </body>
 </html>

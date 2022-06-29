@@ -24,7 +24,8 @@ class CarRepository extends Repository
             $car['car_name'],
             $car['car_year'],
             $car['image'],
-            $car['car_specification']
+            $car['car_specification'],
+            $car['id']
         );
     }
 

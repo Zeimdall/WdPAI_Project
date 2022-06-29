@@ -2,6 +2,7 @@
 require_once __DIR__.'/src/controllers/DefaultController.php';
 require_once __DIR__.'/src/controllers/SecurityController.php';
 require_once __DIR__.'/src/controllers/CarController.php';
+require_once __DIR__.'/src/repository/UserRepository.php';
 
 class Router {
 
@@ -24,6 +25,10 @@ class Router {
         $controller = self::$routes[$action];
         $object = new $controller;
         $action = $action ?: 'index';
+
+        if (!Security::checkAccess($controller, $action)) {
+            die('No permission');
+        }
 
         $object->$action();
 

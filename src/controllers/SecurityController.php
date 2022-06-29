@@ -15,8 +15,6 @@ class SecurityController extends AppController {
     }
 
     public function login(){
-        session_start();
-
         if($this->isPost()) {
 
             $email = $_POST['email'];
@@ -38,9 +36,14 @@ class SecurityController extends AppController {
             $_SESSION['email'] = $user->getEmail();
             $_SESSION['userId'] = $user->getId();
             $_SESSION['logged_in'] = true;
+            Security::$user = $user;
 
             $url = "http://$_SERVER[HTTP_HOST]";
-            header("Location: {$url}/mainpage");
+            if ($user->getRole() === 'admin') {
+                header("Location: {$url}/adminpage");
+            } else {
+                header("Location: {$url}/mainpage");
+            }
         } elseif($_SESSION['logged_in']) {
             $url = "http://$_SERVER[HTTP_HOST]";
             header("Location: {$url}/mainpage");
@@ -51,13 +54,12 @@ class SecurityController extends AppController {
 
     public function logout()
     {
-        session_start();
-
         if($this->isPost()){
             session_unset();
             unset($_SESSION['email']);
             unset($_SESSION['userId']);
             unset($_SESSION['logged_in']);
+            Security::$user = null;
             session_destroy();
 
             $url = "http://$_SERVER[HTTP_HOST]";

@@ -32,7 +32,7 @@
                 <button onclick=rentCar(<?=$car->getId(); ?>) class="rent-btn">Rent</button>
             </div>
         </div>
+        <?php endforeach; ?>
     </div>
-    <?php endforeach; ?>
 </body>
 </html>

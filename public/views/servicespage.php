@@ -16,7 +16,7 @@
             <h1 id="loc-title">Localization</h1>
             <div id="map"></div>
         </div>
-        <div class="text-description right"><br>Currently it is possible to pick and leave vehicles in Polish city Kraków on Warszawska 24 street. We are still working to extend the range of our car rental to other locations. We will let you know in the near future!</div>
+        <div id="loc-description" class="right"><br>Currently it is possible to pick and leave vehicles in Polish city Kraków on Warszawska 24 street. We are still working to extend the range of our car rental to other locations. We will let you know in the near future!</div>
     </div>
 </body>
 </html>

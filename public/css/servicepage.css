@@ -37,6 +37,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.text-description {
-    margin: 20px;
+#loc-description {
+    padding: 20px;
+    font-size: 24px;
 }

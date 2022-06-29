@@ -31,18 +31,15 @@ class CarRepository extends Repository
     public function addCar(Car $car): void
     {
         $stmt = $this->database->connect()->prepare('
-            INSERT INTO projects (car_name, car_year, image, car_specification)
+            INSERT INTO cars (car_name, car_year, image, car_specification)
             VALUES (?, ?, ?, ?)
         ');
-
-        $assignedById = 1;
 
         $stmt->execute([
             $car->getCarName(),
             $car->getCarYear(),
             $car->getImage(),
-            $car->getCarSpecification(),
-            $assignedById
+            $car->getCarSpecification()
         ]);
     }
 
@@ -58,14 +55,25 @@ class CarRepository extends Repository
         $cars = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach($cars as $car) {
-            $result = new Car(
+            $result[] = new Car(
                 $car['car_name'],
                 $car['car_year'],
-                $car['image'],
                 $car['car_specification'],
+                $car['image'],
                 $car['id']
             );
         }
         return $result;
+    }
+
+    public function rentCar(Car $car, int $userId): void
+    {
+        $stmt = $this->database->connect()->prepare('
+            INSERT INTO public.rented_cars (user_id, car_id) VALUES (?, ?);
+        ');
+        $stmt->execute([
+            $_SESSION['userId'],
+            $car->getId()
+        ]);
     }
 }

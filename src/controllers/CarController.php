@@ -43,6 +43,13 @@ class CarController extends AppController
         ]);
     }
 
+    public function rentCar()
+    {
+        $body = json_decode(file_get_contents("php://input"));
+        $car = $this->carRepository->getCar($body->car_id);
+        $this->carRepository->rentCar($car, Security::$user->getId());
+    }
+
     private function validate(array $file): bool
     {
         if ($file['size'] > self::MAX_FILE_SIZE) {

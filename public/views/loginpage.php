@@ -9,7 +9,7 @@
     <div class="container">
         <div class="container-header">
             <div class="header-item active" style="margin-right: 5px">Sign in</div>
-            <a class="header-item non-active" onclick="redirect('register')">Sign up</a>
+            <a id="register-option" class="header-item non-active" onclick="redirect('register')">Sign up</a>
         </div>
         <div class="container-content">
             <form class="login" action="login" method="POST">

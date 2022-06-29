@@ -27,17 +27,23 @@
     height: 50px;
     width: 50px;
     background-size: 20px;
+    cursor: pointer;
 }
 
 .lang-wrap #en-lang {
     margin-left: 10px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     width: 400px;
-    margin: 100px auto 0 auto;
-    min-height: 400px;
-    height: 400px;
+    height: 420px;
     display: flex;
     flex-direction: column;
 
@@ -45,6 +51,18 @@
     border: 2px solid white;
     border-radius: 33px;
     background: rgba(112, 112, 112, 0.8);
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        margin: 100px auto 0 auto;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .container {
+        margin: 200px auto 0 auto;
+    }
 }
 
 .container-content {
@@ -72,13 +90,18 @@
     text-decoration: none;
 }
 
+.header-item.non-active {
+    cursor: pointer;
+}
+
 .container .container-header .header-item.active {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,55,79,1) 35%, #3F99BC 100%);
     color: white;
-    margin-right: 5px
+    margin-right: 5px;
+    cursor: default;
 }
 
-.container .container-content .text-field {
+.container .container-content .login .text-field {
     margin: 0 auto;
 }
 
@@ -95,6 +118,10 @@ input {
     padding: 1em;
     margin: 1em;
     width: 50%;
+}
+
+input.center {
+    color: white;
 }
 
 input.center, button.center {
@@ -116,8 +143,34 @@ button {
     color: black;
     margin: 2em;
     line-height: 2.5em;
+    cursor: pointer;
+    display: block;
+}
+
+#loginbtn:hover {
+    color: #FFFFFF;
+}
+
+input#car-img {
+    border-bottom: none;
+}
+
+#registbtn:hover, #add-car-btn:hover {
+    color: white;
+}
+
+.container .container-header .header-item:hover {
+    color: #FFFFFF;
 }
 
 #email, #password #confirm-password {
     color: white;
+}
+
+.messages {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px 0 10px 0;
+    height: 0;
 }

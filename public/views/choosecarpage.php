@@ -6,15 +6,15 @@
     <script src="public/js/addRentedCar.js" defer></script>
 </head>
 <body>
-    <div class="tile-container">
-        <?php include_once 'src/repository/UserRepository.php';
+    <?php include_once 'src/repository/UserRepository.php';
 
-        if (Security::$user->getRole() === 'admin') {
-            include 'header_adminpage.php';
-        } else {
-            include 'header_mainpage.php';
-        }
-        ?>
+    if (Security::$user->getRole() === 'admin') {
+        include 'header_adminpage.php';
+    } else {
+        include 'header_mainpage.php';
+    }
+    ?>
+    <div class="tile-container">
         <?php include_once 'src/repository/CarRepository.php';
         $carRepository = new CarRepository();
         $cars = $carRepository->getCars();

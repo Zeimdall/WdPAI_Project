@@ -1,7 +1,6 @@
 .idea
 .env
 .config.php
-public/uploads
 tests/node_modules
 tests/package-lock.json
 tests/package.json
